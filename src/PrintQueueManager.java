@@ -19,6 +19,12 @@ public class PrintQueueManager {
 
         // Ask the user for the number of print jobs
         System.out.print("Enter the number of print jobs: ");
+        while (!scanner.hasNextInt()) {
+            System.out.println("Invalid number of print jobs.");
+            scanner.next();
+            System.out.print("Enter the number of print jobs: ");
+        }
+
         numberOfJobs = scanner.nextInt();
         scanner.nextLine();
 
