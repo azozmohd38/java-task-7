@@ -150,8 +150,12 @@ public class UndoActionManager {
 
                     // Clear All Actions
                     case 7:
-                        actionStack.clear();
-                        System.out.println("All actions have been cleared.");
+                        if (actionStack.isEmpty()) {
+                            System.out.println("No actions available.");
+                        } else {
+                            actionStack.clear();
+                            System.out.println("All actions have been cleared.");
+                        }
                         break;
 
                     // Exit
