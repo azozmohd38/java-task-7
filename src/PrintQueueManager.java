@@ -71,8 +71,12 @@ public class PrintQueueManager {
                     case 1:
                         System.out.print("Enter print job name: ");
                         printJobName = scanner.nextLine();
-                        printQueue.offer(printJobName);
-                        System.out.println("Print job added successfully.");
+                        if (printJobName.isEmpty()) {
+                            System.out.println("Print job name cannot be empty.");
+                        } else {
+                            printQueue.offer(printJobName);
+                            System.out.println("Print job added successfully.");
+                        }
                         break;
 
                     // Process the next print job
