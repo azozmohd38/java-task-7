@@ -171,7 +171,7 @@ public class NumberStackAnalyzer {
 
                     // Exit the program
                     case 6:
-                        System.out.println("Exiting program...");
+                        System.out.println("Program terminated.");
                         break;
 
                     // Invalid menu option
