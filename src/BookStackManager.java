@@ -117,8 +117,8 @@ public class BookStackManager {
                             System.out.println("No books available.");
                         } else {
                             System.out.println("Books in Stack:");
-                            for (String book : bookStack) {
-                                System.out.println(book);
+                            for (int i = bookStack.size() - 1; i >= 0; i--) {
+                                System.out.println(bookStack.get(i));
                             }
                         }
                         break;
