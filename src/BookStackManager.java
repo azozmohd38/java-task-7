@@ -20,7 +20,7 @@ public class BookStackManager {
         // Ask user for the number of books
         System.out.print("Enter the number of books: ");
         numberOfBooks = scanner.nextInt();
-        scanner.nextLine(); // Clear input buffer
+        scanner.nextLine();
 
         // Validate number of books
         if (numberOfBooks <= 0) {
