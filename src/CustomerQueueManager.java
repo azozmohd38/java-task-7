@@ -159,7 +159,6 @@ public class CustomerQueueManager {
             } while (choice != 7);
         }
 
-        // Close the Scanner
         scanner.close();
     }
 }
