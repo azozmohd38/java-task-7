@@ -67,6 +67,12 @@ public class NumberStackAnalyzer {
                     // Add a number to the stack
                     case 1:
                         System.out.print("Enter a number: ");
+                        while (!scanner.hasNextInt()) {
+                            System.out.println("Please enter a valid integer.");
+                            scanner.next();
+                            System.out.print("Enter a number: ");
+                        }
+
                         int newNumber = scanner.nextInt();
                         numberStack.push(newNumber);
                         System.out.println("Number added successfully.");
