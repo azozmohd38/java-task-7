@@ -43,6 +43,14 @@ public class HospitalPatientManager {
         runMenu();
     }
 
+    public static void viewNextPatient() {
+        if (waitingPatients.isEmpty()) {
+            System.out.println("No patients available.");
+        } else {
+            System.out.println("Next Patient: " + waitingPatients.peek());
+        }
+    }
+
     public static void treatPatient() {
         if (waitingPatients.isEmpty()) {
             System.out.println("No patients waiting for treatment.");
