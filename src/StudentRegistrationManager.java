@@ -40,7 +40,7 @@ public class StudentRegistrationManager {
             // Read student names and add them to the queue
             for (int i = 1; i <= numberOfStudents; i++) {
                 System.out.print("Enter student " + i + " name: ");
-                studentName = scanner.nextLine();
+                studentName = scanner.nextLine().trim();
                 registrationQueue.add(studentName);
             }
 
