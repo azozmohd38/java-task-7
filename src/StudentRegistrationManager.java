@@ -24,7 +24,7 @@ public class StudentRegistrationManager {
         // Ask the user for the number of students
         System.out.print("Enter the number of students waiting for registration: ");
         numberOfStudents = scanner.nextInt();
-        scanner.nextLine(); // Clear input buffer
+        scanner.nextLine();
 
         // Check if the number of students is valid
         if (numberOfStudents <= 0) {
