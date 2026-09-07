@@ -43,6 +43,28 @@ public class HospitalPatientManager {
         runMenu();
     }
 
+    public static void displayWaitingPatients() {
+        if (waitingPatients.isEmpty()) {
+            System.out.println("No waiting patients.");
+        } else {
+            System.out.println("Waiting Patients:");
+            for (String patient : waitingPatients) {
+                System.out.println(patient);
+            }
+        }
+    }
+
+    public static void displayTreatedPatients() {
+        if (treatedPatients.isEmpty()) {
+            System.out.println("No treated patients.");
+        } else {
+            System.out.println("Treated Patients:");
+            for (int i = treatedPatients.size() - 1; i >= 0; i--) {
+                System.out.println(treatedPatients.get(i));
+            }
+        }
+    }
+
     public static void searchPatient() {
         System.out.print("Enter patient name to search: ");
         String patientName = scanner.nextLine().trim();
