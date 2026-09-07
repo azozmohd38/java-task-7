@@ -76,8 +76,12 @@ public class StudentRegistrationManager {
                     case 1:
                         System.out.print("Enter student name: ");
                         studentName = scanner.nextLine();
-                        registrationQueue.add(studentName);
-                        System.out.println("Student added to registration queue successfully.");
+                        if (studentName.isEmpty()) {
+                            System.out.println("Student name cannot be empty.");
+                        } else {
+                            registrationQueue.add(studentName);
+                            System.out.println("Student added to registration queue successfully.");
+                        }
                         break;
 
                     // Process student registration
