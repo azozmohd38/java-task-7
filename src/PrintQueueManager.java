@@ -132,8 +132,10 @@ public class PrintQueueManager {
                             System.out.println("No print jobs in the queue.");
                         } else {
                             System.out.println("Print Jobs:");
+                            int position = 1;
                             for (String job : printQueue) {
-                                System.out.println(job);
+                                System.out.println(position + ". " + job);
+                                position++;
                             }
                         }
                         break;
