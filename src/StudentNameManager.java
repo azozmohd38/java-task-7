@@ -136,8 +136,21 @@ public class StudentNameManager {
 
                         found = false;
 
-                        for (int i = 0; i < studentCount; i++) {
+                        boolean newNameExists = false;
 
+                        for (int i = 0; i < studentCount; i++) {
+                            if (studentNames[i].equals(newName)) {
+                                newNameExists = true;
+                                break;
+                            }
+                        }
+
+                        if (newNameExists && !oldName.equals(newName)) {
+                            System.out.println("Student name already exists.");
+                            break;
+                        }
+
+                        for (int i = 0; i < studentCount; i++) {
                             if (studentNames[i].equals(oldName)) {
                                 studentNames[i] = newName;
                                 found = true;
