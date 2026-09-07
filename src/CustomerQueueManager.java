@@ -54,6 +54,12 @@ public class CustomerQueueManager {
                 System.out.println("6. Display Queue Statistics");
                 System.out.println("7. Exit");
                 System.out.print("Enter your choice: ");
+                while (!scanner.hasNextInt()) {
+                    System.out.println("Invalid choice. Please try again.");
+                    scanner.next();
+                    System.out.print("Enter your choice: ");
+                }
+
                 choice = scanner.nextInt();
                 scanner.nextLine(); // Clear the input buffer
 
