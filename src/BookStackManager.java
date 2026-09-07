@@ -135,6 +135,7 @@ public class BookStackManager {
                         }
 
                         System.out.println("Is Stack Empty? " + bookStack.isEmpty());
+                        System.out.println("Stack Size: " + bookStack.size());
                         break;
 
                     // Exit
