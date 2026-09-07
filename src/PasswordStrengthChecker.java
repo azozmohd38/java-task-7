@@ -60,8 +60,13 @@ public class PasswordStrengthChecker {
                 case 1:
 
                     System.out.print("Enter new password: ");
-                    password = input.nextLine();
-                    System.out.println("Password saved successfully.");
+                    password = input.nextLine().trim();
+
+                    if (password.isEmpty()) {
+                        System.out.println("Invalid password.");
+                    } else {
+                        System.out.println("Password saved successfully.");
+                    }
                     break;
 
                 // Check Password Length
