@@ -23,6 +23,12 @@ public class StudentRegistrationManager {
 
         // Ask the user for the number of students
         System.out.print("Enter the number of students waiting for registration: ");
+        while (!scanner.hasNextInt()) {
+            System.out.println("Invalid number of students.");
+            scanner.next();
+            System.out.print("Enter the number of students waiting for registration: ");
+        }
+
         numberOfStudents = scanner.nextInt();
         scanner.nextLine();
 
