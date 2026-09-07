@@ -87,6 +87,8 @@ public class StudentNameManager {
 
                         if (found) {
                             System.out.println("Student name already exists.");
+                        } else if (studentCount >= studentNames.length) {
+                            System.out.println("Student list is full.");
                         } else {
                             studentNames[studentCount] = studentName;
                             studentCount++;
