@@ -137,8 +137,10 @@ public class StudentRegistrationManager {
                             System.out.println("No waiting students.");
                         } else {
                             System.out.println("Waiting Students:");
+                            int position = 1;
                             for (String student : registrationQueue) {
-                                System.out.println(student);
+                                System.out.println(position + ". " + student);
+                                position++;
                             }
                         }
                         break;
