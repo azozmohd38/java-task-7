@@ -43,6 +43,16 @@ public class HospitalPatientManager {
         runMenu();
     }
 
+    public static void undoLastTreatment() {
+        if (treatedPatients.isEmpty()) {
+            System.out.println("No completed treatments available.");
+            return;
+        }
+
+        String patient = treatedPatients.pop();
+        System.out.println("Treatment undone for: " + patient);
+    }
+
     public static void viewNextPatient() {
         if (waitingPatients.isEmpty()) {
             System.out.println("No patients available.");
