@@ -105,7 +105,7 @@ public class CustomerQueueManager {
                         if (customerQueue.contains(customerName)) {
                             System.out.println("Customer found in the queue.");
                         } else {
-                            System.out.println("Customer not found in the queue.");
+                            System.out.println("Customer not found.");
                         }
                         break;
 
