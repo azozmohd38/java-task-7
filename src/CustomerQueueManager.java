@@ -148,7 +148,7 @@ public class CustomerQueueManager {
 
                     // Exit the program
                     case 7:
-                        System.out.println("Exiting program...");
+                        System.out.println("Program terminated.");
                         break;
 
                     // Invalid menu choice
