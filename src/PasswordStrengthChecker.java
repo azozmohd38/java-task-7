@@ -85,7 +85,6 @@ public class PasswordStrengthChecker {
 
                 // Analyze Password Characters
                 case 3:
-
                     uppercaseCount = 0;
                     lowercaseCount = 0;
                     digitCount = 0;
