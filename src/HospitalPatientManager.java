@@ -43,6 +43,19 @@ public class HospitalPatientManager {
         runMenu();
     }
 
+    public static void searchPatient() {
+        System.out.print("Enter patient name to search: ");
+        String patientName = scanner.nextLine().trim();
+
+        if (waitingPatients.contains(patientName)) {
+            System.out.println("Patient is waiting for treatment.");
+        } else if (treatedPatients.search(patientName) != -1) {
+            System.out.println("Patient treatment completed.");
+        } else {
+            System.out.println("Patient not found.");
+        }
+    }
+
     public static void undoLastTreatment() {
         if (treatedPatients.isEmpty()) {
             System.out.println("No completed treatments available.");
