@@ -103,7 +103,9 @@ public class PrintQueueManager {
                         System.out.print("Enter print job name to search: ");
                         printJobName = scanner.nextLine();
 
-                        if (printQueue.contains(printJobName)) {
+                        if (printJobName.isEmpty()) {
+                            System.out.println("Print job not found.");
+                        } else if (printQueue.contains(printJobName)) {
                             System.out.println("Print job found.");
                         } else {
                             System.out.println("Print job not found.");
