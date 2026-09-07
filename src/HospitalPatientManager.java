@@ -43,6 +43,16 @@ public class HospitalPatientManager {
         runMenu();
     }
 
+    public static void displayStatistics() {
+        System.out.println("\n----- Hospital Statistics -----");
+        System.out.println("Total waiting patients: " + waitingPatients.size());
+        System.out.println("Total treated patients: " + treatedPatients.size());
+        System.out.println("Next patient waiting: " + (waitingPatients.isEmpty() ? "None" : waitingPatients.peek()));
+        System.out.println("Last treated patient: " + (treatedPatients.isEmpty() ? "None" : treatedPatients.peek()));
+        System.out.println("Queue is empty: " + waitingPatients.isEmpty());
+        System.out.println("Stack is empty: " + treatedPatients.isEmpty());
+    }
+
     public static void displayWaitingPatients() {
         if (waitingPatients.isEmpty()) {
             System.out.println("No waiting patients.");
