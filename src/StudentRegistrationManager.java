@@ -120,7 +120,9 @@ public class StudentRegistrationManager {
                         System.out.print("Enter student name to search: ");
                         studentName = scanner.nextLine();
 
-                        if (registrationQueue.contains(studentName)) {
+                        if (studentName.isEmpty()) {
+                            System.out.println("Student not found.");
+                        } else if (registrationQueue.contains(studentName)) {
                             System.out.println("Student is waiting for registration.");
                         } else if (registrationStack.search(studentName) != -1) {
                             System.out.println("Student is already registered.");
