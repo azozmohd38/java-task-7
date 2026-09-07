@@ -101,7 +101,7 @@ public class StudentNameManager {
                     case 2:
 
                         System.out.print("Enter student name to search: ");
-                        searchName = input.nextLine();
+                        searchName = input.nextLine().trim();
 
                         found = false;
 
