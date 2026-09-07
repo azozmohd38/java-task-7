@@ -37,7 +37,9 @@ public class CustomerQueueManager {
             for (int i = 1; i <= numberOfCustomers; i++) {
                 System.out.print("Enter customer " + i + " name: ");
                 customerName = scanner.nextLine().trim();
-                customerQueue.offer(customerName);
+                if (!customerName.isEmpty()) {
+                    customerQueue.offer(customerName);
+                }
             }
 
             // Display the menu until the user chooses Exit
