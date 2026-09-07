@@ -136,11 +136,16 @@ public class PasswordStrengthChecker {
                         }
                     }
 
+                    boolean hasUppercase = uppercaseCount > 0;
+                    boolean hasLowercase = lowercaseCount > 0;
+                    boolean hasDigit = digitCount > 0;
+                    boolean hasSpecial = specialCount > 0;
+
                     if (password.length() >= 8 &&
-                            uppercaseCount > 0 &&
-                            lowercaseCount > 0 &&
-                            digitCount > 0 &&
-                            specialCount > 0) {
+                            hasUppercase &&
+                            hasLowercase &&
+                            hasDigit &&
+                            hasSpecial) {
 
                         strength = "Strong Password";
 
