@@ -175,6 +175,10 @@ public class PasswordStrengthChecker {
 
                 // Display Password Report
                 case 6:
+                    if (password.isEmpty()) {
+                        System.out.println("Invalid password.");
+                        break;
+                    }
 
                     uppercaseCount = 0;
                     lowercaseCount = 0;
