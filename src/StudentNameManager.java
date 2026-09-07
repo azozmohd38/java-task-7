@@ -242,10 +242,10 @@ public class StudentNameManager {
                     case 6:
 
                         System.out.print("Enter first name: ");
-                        firstName = input.nextLine();
+                        firstName = input.nextLine().trim();
 
                         System.out.print("Enter second name: ");
-                        secondName = input.nextLine();
+                        secondName = input.nextLine().trim();
 
                         System.out.println("equals(): " + firstName.equals(secondName));
                         System.out.println("equalsIgnoreCase(): " + firstName.equalsIgnoreCase(secondName));
