@@ -20,7 +20,7 @@ public class CustomerQueueManager {
         // Ask the user for the number of customers
         System.out.print("Enter the number of customers: ");
         numberOfCustomers = scanner.nextInt();
-        scanner.nextLine(); // Clear the input buffer
+        scanner.nextLine();
 
         // Check if the number of customers is valid
         if (numberOfCustomers <= 0) {
