@@ -16,6 +16,12 @@ public class NumberStackAnalyzer {
 
         // Ask the user for the number of values
         System.out.print("Enter the number of values: ");
+        while (!scanner.hasNextInt()) {
+            System.out.println("Invalid number of values.");
+            scanner.next();
+            System.out.print("Enter the number of values: ");
+        }
+
         numberOfValues = scanner.nextInt();
 
         // Check if the number of values is valid
