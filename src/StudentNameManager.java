@@ -69,7 +69,12 @@ public class StudentNameManager {
                     case 1:
 
                         System.out.print("Enter new student name: ");
-                        studentName = input.nextLine();
+                        studentName = input.nextLine().trim();
+
+                        if (studentName.isEmpty()) {
+                            System.out.println("Student name cannot be empty.");
+                            break;
+                        }
 
                         found = false;
 
