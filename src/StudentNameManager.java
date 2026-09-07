@@ -60,6 +60,12 @@ public class StudentNameManager {
                 System.out.println("7. Exit");
                 System.out.print("Enter your choice: ");
 
+                while (!input.hasNextInt()) {
+                    System.out.println("Invalid menu choice.");
+                    input.next();
+                    System.out.print("Enter your choice: ");
+                }
+
                 choice = input.nextInt();
                 input.nextLine();
 
