@@ -6,7 +6,6 @@ public class TicketQueueManager {
 
     public static void main(String[] args) {
 
-        // Create Scanner  for user input
         Scanner scanner = new Scanner(System.in);
 
 
@@ -20,7 +19,7 @@ public class TicketQueueManager {
         // Ask the user for the number
         System.out.print("Enter the number of customers: ");
         numberOfCustomers = scanner.nextInt();
-        scanner.nextLine(); // Clear input buffer
+        scanner.nextLine();
 
         // Check if the number of customers is valid
         if (numberOfCustomers <= 0) {
