@@ -117,7 +117,9 @@ public class PrintQueueManager {
                         System.out.print("Enter print job name to remove: ");
                         printJobName = scanner.nextLine();
 
-                        if (printQueue.remove(printJobName)) {
+                        if (printJobName.isEmpty()) {
+                            System.out.println("Print job not found.");
+                        } else if (printQueue.remove(printJobName)) {
                             System.out.println("Print job removed successfully.");
                         } else {
                             System.out.println("Print job not found.");
