@@ -207,7 +207,9 @@ public class StudentNameManager {
                             }
                         }
 
-                        double averageLength = (double) totalCharacters / studentCount;
+                        double averageLength = studentCount == 0
+                                ? 0
+                                : (double) totalCharacters / studentCount;
 
                         System.out.println("\n===== Name Statistics =====");
                         System.out.println("Total Students: " + studentCount);
