@@ -145,7 +145,7 @@ public class UndoActionManager {
                             System.out.println("Most recent action: " + actionStack.peek());
                         }
 
-                       System.out.println("Is Stack Empty? " + actionStack.isEmpty());
+                        System.out.println("Is Stack Empty? " + actionStack.isEmpty());
                         break;
 
                     // Clear All Actions
