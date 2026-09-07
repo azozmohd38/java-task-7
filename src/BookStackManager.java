@@ -151,7 +151,6 @@ public class BookStackManager {
             } while (choice != 7);
         }
 
-        // Close Scanner
         scanner.close();
     }
 }
