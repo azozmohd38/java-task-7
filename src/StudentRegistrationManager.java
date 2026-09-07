@@ -192,7 +192,6 @@ public class StudentRegistrationManager {
             } while (choice != 9);
         }
 
-        // Close the Scanner
         scanner.close();
     }
-}-
+}
