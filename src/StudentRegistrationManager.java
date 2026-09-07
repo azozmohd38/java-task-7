@@ -41,7 +41,9 @@ public class StudentRegistrationManager {
             for (int i = 1; i <= numberOfStudents; i++) {
                 System.out.print("Enter student " + i + " name: ");
                 studentName = scanner.nextLine().trim();
-                registrationQueue.add(studentName);
+                if (!studentName.isEmpty()) {
+                    registrationQueue.add(studentName);
+                }
             }
 
             // Display the menu until the user chooses Exit
