@@ -158,7 +158,7 @@ public class NumberStackAnalyzer {
                             System.out.println("\n----- Analysis Results -----");
                             System.out.println("Total number of elements: " + numberStack.size());
                             System.out.println("Sum of all numbers: " + sum);
-                            System.out.println("Average of all numbers: " + average);
+                            System.out.printf("Average of all numbers: %.2f%n", average);
                             System.out.println("Largest number: " + largest);
                             System.out.println("Smallest number: " + smallest);
                             System.out.println("Total even numbers: " + evenCount);
