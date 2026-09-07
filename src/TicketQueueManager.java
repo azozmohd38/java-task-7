@@ -69,8 +69,12 @@ public class TicketQueueManager {
                     case 1:
                         System.out.print("Enter customer name: ");
                         customerName = scanner.nextLine();
-                        customerQueue.add(customerName);
-                        System.out.println("Customer added successfully.");
+                        if (customerName.isEmpty()) {
+                            System.out.println("Customer name cannot be empty.");
+                        } else {
+                            customerQueue.add(customerName);
+                            System.out.println("Customer added successfully.");
+                        }
                         break;
 
                     // Serve the first customer
