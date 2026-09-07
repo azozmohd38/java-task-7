@@ -116,8 +116,10 @@ public class TicketQueueManager {
                             System.out.println("Queue is empty.");
                         } else {
                             System.out.println("Customers in the queue:");
+                            int position = 1;
                             for (String customer : customerQueue) {
-                                System.out.println(customer);
+                                System.out.println(position + ". " + customer);
+                                position++;
                             }
                         }
                         break;
