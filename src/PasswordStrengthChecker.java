@@ -73,7 +73,6 @@ public class PasswordStrengthChecker {
                 case 2:
 
                     length = password.length();
-
                     System.out.println("Password Length: " + length);
 
                     if (length < 8) {
