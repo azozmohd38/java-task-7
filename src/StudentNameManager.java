@@ -1,11 +1,12 @@
 
 import java.util.Scanner;
+
 public class StudentNameManager {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
 
-        // Declare variables
+        // Main variables
         int numberOfStudents;
         int choice;
         int studentCount;
@@ -20,7 +21,7 @@ public class StudentNameManager {
         // Ask user for number of students
         System.out.print("Enter number of students: ");
         numberOfStudents = input.nextInt();
-        input.nextLine(); // Clear buffer
+        input.nextLine();
 
         // Validate number of students
         if (numberOfStudents <= 0) {
