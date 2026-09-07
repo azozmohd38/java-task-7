@@ -70,7 +70,7 @@ public class BookStackManager {
                     // Add Book
                     case 1:
                         System.out.print("Enter new book title: ");
-                        bookTitle = scanner.nextLine();
+                        bookTitle = scanner.nextLine().trim();
                         bookStack.push(bookTitle);
                         System.out.println("Book added successfully.");
                         break;
