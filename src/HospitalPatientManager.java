@@ -43,6 +43,18 @@ public class HospitalPatientManager {
         runMenu();
     }
 
+    public static void treatPatient() {
+        if (waitingPatients.isEmpty()) {
+            System.out.println("No patients waiting for treatment.");
+            return;
+        }
+
+        String patient = waitingPatients.poll();
+        treatedPatients.push(patient);
+        System.out.println("Patient treatment completed successfully.");
+        System.out.println("Treated Patient: " + patient);
+    }
+
     public static void addPatient() {
         System.out.print("Enter patient name: ");
         String patientName = scanner.nextLine().trim();
