@@ -128,8 +128,8 @@ public class UndoActionManager {
                             System.out.println("No actions available.");
                         } else {
                             System.out.println("Actions in Stack:");
-                            for (String item : actionStack) {
-                                System.out.println(item);
+                            for (int i = actionStack.size() - 1; i >= 0; i--) {
+                                System.out.println(actionStack.get(i));
                             }
                         }
                         break;
