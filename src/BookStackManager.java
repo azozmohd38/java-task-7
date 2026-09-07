@@ -19,6 +19,12 @@ public class BookStackManager {
 
         // Ask user for the number of books
         System.out.print("Enter the number of books: ");
+        while (!scanner.hasNextInt()) {
+            System.out.println("Invalid number of books.");
+            scanner.next();
+            System.out.print("Enter the number of books: ");
+        }
+
         numberOfBooks = scanner.nextInt();
         scanner.nextLine();
 
