@@ -216,7 +216,7 @@ public class StudentNameManager {
                         System.out.println("Longest Name: " + longestName);
                         System.out.println("Shortest Name: " + shortestName);
                         System.out.println("Total Characters: " + totalCharacters);
-                        System.out.println("Average Name Length: " + averageLength);
+                        System.out.printf("Average Name Length: %.2f%n", averageLength);
                         System.out.println("Names Starting with A: " + startsWithA);
                         System.out.println("Names Ending with a: " + endsWithA);
 
