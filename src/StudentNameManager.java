@@ -44,7 +44,7 @@ public class StudentNameManager {
             // Read student names
             for (int i = 0; i < numberOfStudents; i++) {
                 System.out.print("Enter student name " + (i + 1) + ": ");
-                studentNames[i] = input.nextLine();
+                studentNames[i] = input.nextLine().trim();
             }
 
             // Display menu until user exits
