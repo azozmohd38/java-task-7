@@ -39,5 +39,34 @@ public class HospitalPatientManager {
                 waitingPatients.offer(patientName);
             }
         }
+
+        runMenu();
+    }
+
+    public static void runMenu() {
+        int choice;
+
+        do {
+            System.out.println("\n===== Hospital Patient Management =====");
+            System.out.println("1. Add Patient");
+            System.out.println("2. Treat Patient");
+            System.out.println("3. View Next Patient");
+            System.out.println("4. Undo Last Treatment");
+            System.out.println("5. Search Patient");
+            System.out.println("6. Display Waiting Patients");
+            System.out.println("7. Display Treated Patients");
+            System.out.println("8. Display Hospital Statistics");
+            System.out.println("9. Exit");
+            System.out.print("Enter your choice: ");
+
+            while (!scanner.hasNextInt()) {
+                System.out.println("Invalid choice. Please try again.");
+                scanner.next();
+                System.out.print("Enter your choice: ");
+            }
+
+            choice = scanner.nextInt();
+            scanner.nextLine();
+        } while (choice != 9);
     }
 }
