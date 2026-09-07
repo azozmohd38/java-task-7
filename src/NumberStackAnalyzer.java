@@ -53,6 +53,12 @@ public class NumberStackAnalyzer {
                 System.out.println("5. Analyze Numbers");
                 System.out.println("6. Exit");
                 System.out.print("Enter your choice: ");
+                while (!scanner.hasNextInt()) {
+                    System.out.println("Invalid choice. Please try again.");
+                    scanner.next();
+                    System.out.print("Enter your choice: ");
+                }
+
                 choice = scanner.nextInt();
 
                 // Process the user's choice
