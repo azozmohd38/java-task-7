@@ -19,6 +19,12 @@ public class CustomerQueueManager {
 
         // Ask the user for the number of customers
         System.out.print("Enter the number of customers: ");
+        while (!scanner.hasNextInt()) {
+            System.out.println("Invalid number of customers.");
+            scanner.next();
+            System.out.print("Enter the number of customers: ");
+        }
+
         numberOfCustomers = scanner.nextInt();
         scanner.nextLine();
 
