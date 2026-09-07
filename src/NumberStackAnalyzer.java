@@ -5,7 +5,6 @@ public class NumberStackAnalyzer {
 
     public static void main(String[] args) {
 
-        // Create Scanner object for user input
         Scanner scanner = new Scanner(System.in);
 
         // Create a stack to store integer values
