@@ -71,8 +71,12 @@ public class BookStackManager {
                     case 1:
                         System.out.print("Enter new book title: ");
                         bookTitle = scanner.nextLine().trim();
-                        bookStack.push(bookTitle);
-                        System.out.println("Book added successfully.");
+                        if (bookTitle.isEmpty()) {
+                            System.out.println("Book title cannot be empty.");
+                        } else {
+                            bookStack.push(bookTitle);
+                            System.out.println("Book added successfully.");
+                        }
                         break;
 
                     // Remove Top Book
