@@ -38,7 +38,7 @@ public class UndoActionManager {
                 // Validation Loop: Keep asking until user enters a non-empty string
                 do {
                     System.out.print("Enter action " + i + ": ");
-                    action = scanner.nextLine().trim(); // trim() removes leading/trailing spaces
+                    action = scanner.nextLine().trim();
 
                     if (action.isEmpty()) {
                         System.out.println("Error: Action cannot be empty. Please try again.");
