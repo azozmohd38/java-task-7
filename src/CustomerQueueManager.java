@@ -36,7 +36,7 @@ public class CustomerQueueManager {
             // Read customer names and add them to the queue
             for (int i = 1; i <= numberOfCustomers; i++) {
                 System.out.print("Enter customer " + i + " name: ");
-                customerName = scanner.nextLine();
+                customerName = scanner.nextLine().trim();
                 customerQueue.offer(customerName);
             }
 
