@@ -36,7 +36,7 @@ public class PrintQueueManager {
             // Read print job names and add them to the queue
             for (int i = 1; i <= numberOfJobs; i++) {
                 System.out.print("Enter print job " + i + ": ");
-                printJobName = scanner.nextLine();
+                printJobName = scanner.nextLine().trim();
                 printQueue.offer(printJobName);
             }
 
