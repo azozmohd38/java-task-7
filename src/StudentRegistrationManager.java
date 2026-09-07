@@ -181,7 +181,7 @@ public class StudentRegistrationManager {
 
                     // Exit the program
                     case 9:
-                        System.out.println("Exiting program...");
+                        System.out.println("Program terminated.");
                         break;
 
                     // Invalid menu option
