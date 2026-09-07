@@ -150,9 +150,9 @@ public class PasswordStrengthChecker {
                         strength = "Strong Password";
 
                     } else if (password.length() >= 6 &&
-                            uppercaseCount > 0 &&
-                            lowercaseCount > 0 &&
-                            digitCount > 0) {
+                            hasUppercase &&
+                            hasLowercase &&
+                            hasDigit) {
 
                         strength = "Medium Password";
 
