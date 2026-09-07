@@ -20,7 +20,7 @@ public class PasswordStrengthChecker {
 
         // Prompt user to enter password
         System.out.print("Enter a password: ");
-        password = input.nextLine();
+        password = input.nextLine().trim();
 
         // Validate password
         if (password.length() <= 0) {
