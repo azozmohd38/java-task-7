@@ -37,7 +37,9 @@ public class PrintQueueManager {
             for (int i = 1; i <= numberOfJobs; i++) {
                 System.out.print("Enter print job " + i + ": ");
                 printJobName = scanner.nextLine().trim();
-                printQueue.offer(printJobName);
+                if (!printJobName.isEmpty()) {
+                    printQueue.offer(printJobName);
+                }
             }
 
             // Display the menu until the user chooses Exit
