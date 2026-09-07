@@ -36,7 +36,7 @@ public class BookStackManager {
             // Read book titles and push them into the stack
             for (int i = 1; i <= numberOfBooks; i++) {
                 System.out.print("Enter book title " + i + ": ");
-                bookTitle = scanner.nextLine();
+                bookTitle = scanner.nextLine().trim();
                 bookStack.push(bookTitle);
             }
 
