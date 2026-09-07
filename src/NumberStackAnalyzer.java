@@ -182,7 +182,6 @@ public class NumberStackAnalyzer {
             } while (choice != 6);
         }
 
-        // Close the scanner
         scanner.close();
     }
 }
