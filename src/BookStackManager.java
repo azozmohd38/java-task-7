@@ -100,7 +100,7 @@ public class BookStackManager {
                     // Search Book
                     case 4:
                         System.out.print("Enter book title to search: ");
-                        bookTitle = scanner.nextLine();
+                        bookTitle = scanner.nextLine().trim();
 
                         position = bookStack.search(bookTitle);
 
