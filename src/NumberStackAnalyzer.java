@@ -116,8 +116,8 @@ public class NumberStackAnalyzer {
                         } else {
 
                             int sum = 0;
-                            int largest = numberStack.get(0);
-                            int smallest = numberStack.get(0);
+                            int largest = numberStack.peek();
+                            int smallest = numberStack.peek();
                             int evenCount = 0;
                             int oddCount = 0;
                             int positiveCount = 0;
