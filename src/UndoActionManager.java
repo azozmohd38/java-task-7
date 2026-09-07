@@ -62,8 +62,14 @@ public class UndoActionManager {
                 System.out.println("8. Exit");
                 System.out.print("Enter your choice: ");
 
+                while (!scanner.hasNextInt()) {
+                    System.out.println("Invalid choice. Please try again.");
+                    scanner.next();
+                    System.out.print("Enter your choice: ");
+                }
+
                 choice = scanner.nextInt();
-                scanner.nextLine(); // Clear input buffer
+                scanner.nextLine();
 
                 // Process the user's choice
                 switch (choice) {
