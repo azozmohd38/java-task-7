@@ -32,6 +32,12 @@ public class NumberStackAnalyzer {
             // Read integers and push them into the stack
             for (int i = 1; i <= numberOfValues; i++) {
                 System.out.print("Enter number " + i + ": ");
+                while (!scanner.hasNextInt()) {
+                    System.out.println("Please enter a valid integer.");
+                    scanner.next();
+                    System.out.print("Enter number " + i + ": ");
+                }
+
                 int value = scanner.nextInt();
                 numberStack.push(value);
             }
