@@ -167,7 +167,6 @@ public class PrintQueueManager {
             } while (choice != 8);
         }
 
-        // Close the Scanner
         scanner.close();
     }
 }
