@@ -115,8 +115,10 @@ public class CustomerQueueManager {
                             System.out.println("No customers in the queue.");
                         } else {
                             System.out.println("Customers in the queue:");
+                            int position = 1;
                             for (String customer : customerQueue) {
-                                System.out.println(customer);
+                                System.out.println(position + ". " + customer);
+                                position++;
                             }
                         }
                         break;
