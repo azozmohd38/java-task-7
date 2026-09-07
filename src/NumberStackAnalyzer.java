@@ -152,7 +152,7 @@ public class NumberStackAnalyzer {
                                 }
                             }
 
-                            double average = (double) sum / numberStack.size();
+                            double average = numberStack.isEmpty() ? 0 : (double) sum / numberStack.size();
 
                             // Display analysis results
                             System.out.println("\n----- Analysis Results -----");
