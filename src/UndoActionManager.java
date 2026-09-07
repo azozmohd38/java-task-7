@@ -91,7 +91,8 @@ public class UndoActionManager {
                         if (actionStack.isEmpty()) {
                             System.out.println("No actions to undo.");
                         } else {
-                            System.out.println("Removed Action: " + actionStack.pop());
+                            String removedAction = actionStack.pop();
+                            System.out.println("Removed Action: " + removedAction);
                         }
                         break;
 
