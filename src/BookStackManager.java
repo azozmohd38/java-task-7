@@ -37,7 +37,9 @@ public class BookStackManager {
             for (int i = 1; i <= numberOfBooks; i++) {
                 System.out.print("Enter book title " + i + ": ");
                 bookTitle = scanner.nextLine().trim();
-                bookStack.push(bookTitle);
+                if (!bookTitle.isEmpty()) {
+                    bookStack.push(bookTitle);
+                }
             }
 
             // Display menu until user chooses Exit
