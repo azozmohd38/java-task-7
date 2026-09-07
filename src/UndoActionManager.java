@@ -172,7 +172,6 @@ public class UndoActionManager {
             } while (choice != 8);
         }
 
-        // Close the Scanner
         scanner.close();
     }
 }
