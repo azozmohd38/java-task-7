@@ -103,8 +103,8 @@ public class NumberStackAnalyzer {
                             System.out.println("Stack is empty.");
                         } else {
                             System.out.println("Numbers in the stack:");
-                            for (int number : numberStack) {
-                                System.out.println(number);
+                            for (int i = numberStack.size() - 1; i >= 0; i--) {
+                                System.out.println(numberStack.get(i));
                             }
                         }
                         break;
