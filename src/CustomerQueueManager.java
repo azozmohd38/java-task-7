@@ -70,8 +70,12 @@ public class CustomerQueueManager {
                     case 1:
                         System.out.print("Enter customer name: ");
                         customerName = scanner.nextLine();
-                        customerQueue.offer(customerName);
-                        System.out.println("Customer added successfully.");
+                        if (customerName.isEmpty()) {
+                            System.out.println("Customer name cannot be empty.");
+                        } else {
+                            customerQueue.offer(customerName);
+                            System.out.println("Customer added successfully.");
+                        }
                         break;
 
                     // Serve the first customer
