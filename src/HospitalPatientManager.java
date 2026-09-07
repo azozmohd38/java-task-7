@@ -67,6 +67,38 @@ public class HospitalPatientManager {
 
             choice = scanner.nextInt();
             scanner.nextLine();
+
+            switch (choice) {
+                case 1:
+                    addPatient();
+                    break;
+                case 2:
+                    treatPatient();
+                    break;
+                case 3:
+                    viewNextPatient();
+                    break;
+                case 4:
+                    undoLastTreatment();
+                    break;
+                case 5:
+                    searchPatient();
+                    break;
+                case 6:
+                    displayWaitingPatients();
+                    break;
+                case 7:
+                    displayTreatedPatients();
+                    break;
+                case 8:
+                    displayStatistics();
+                    break;
+                case 9:
+                    System.out.println("Program terminated.");
+                    break;
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+            }
         } while (choice != 9);
     }
 }
