@@ -125,14 +125,15 @@ public class PasswordStrengthChecker {
 
                         char ch = password.charAt(i);
 
-                        if (Character.isUpperCase(ch))
+                        if (Character.isUpperCase(ch)) {
                             uppercaseCount++;
-                        else if (Character.isLowerCase(ch))
+                        } else if (Character.isLowerCase(ch)) {
                             lowercaseCount++;
-                        else if (Character.isDigit(ch))
+                        } else if (Character.isDigit(ch)) {
                             digitCount++;
-                        else
+                        } else {
                             specialCount++;
+                        }
                     }
 
                     if (password.length() >= 8 &&
