@@ -43,6 +43,19 @@ public class HospitalPatientManager {
         runMenu();
     }
 
+    public static void addPatient() {
+        System.out.print("Enter patient name: ");
+        String patientName = scanner.nextLine().trim();
+
+        if (patientName.isEmpty()) {
+            System.out.println("Patient name cannot be empty.");
+            return;
+        }
+
+        waitingPatients.offer(patientName);
+        System.out.println("Patient added successfully.");
+    }
+
     public static void runMenu() {
         int choice;
 
