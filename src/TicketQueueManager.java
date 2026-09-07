@@ -101,7 +101,9 @@ public class TicketQueueManager {
                         System.out.print("Enter customer name to search: ");
                         customerName = scanner.nextLine();
 
-                        if (customerQueue.contains(customerName)) {
+                        if (customerName.isEmpty()) {
+                            System.out.println("Customer not found.");
+                        } else if (customerQueue.contains(customerName)) {
                             System.out.println("Customer found in queue.");
                         } else {
                             System.out.println("Customer not found.");
