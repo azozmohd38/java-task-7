@@ -35,7 +35,6 @@ public class UndoActionManager {
 
             // Read and store the initial actions
             for (int i = 1; i <= numberOfActions; i++) {
-                // Validation Loop: Keep asking until user enters a non-empty string
                 do {
                     System.out.print("Enter action " + i + ": ");
                     action = scanner.nextLine().trim();
