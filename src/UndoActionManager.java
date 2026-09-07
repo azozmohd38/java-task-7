@@ -20,7 +20,7 @@ public class UndoActionManager {
         // Ask the user to enter the number of actions
         System.out.print("Enter the number of actions: ");
         numberOfActions = scanner.nextInt();
-        scanner.nextLine(); // Clear input buffer
+        scanner.nextLine();
 
         // Check if the number of actions is valid
         if (numberOfActions <= 0) {
