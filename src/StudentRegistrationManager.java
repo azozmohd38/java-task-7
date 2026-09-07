@@ -151,8 +151,8 @@ public class StudentRegistrationManager {
                             System.out.println("No registered students.");
                         } else {
                             System.out.println("Registered Students:");
-                            for (String student : registrationStack) {
-                                System.out.println(student);
+                            for (int i = registrationStack.size() - 1; i >= 0; i--) {
+                                System.out.println(registrationStack.get(i));
                             }
                         }
                         break;
