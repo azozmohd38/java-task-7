@@ -135,7 +135,7 @@ public class CustomerQueueManager {
                             System.out.println("First customer: " + customerQueue.peek());
 
                             // Find the last customer using a loop
-                            String lastCustomer = "";
+                            String lastCustomer = null;
                             for (String customer : customerQueue) {
                                 lastCustomer = customer;
                             }
