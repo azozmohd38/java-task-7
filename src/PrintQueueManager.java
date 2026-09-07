@@ -156,7 +156,7 @@ public class PrintQueueManager {
 
                     // Exit the program
                     case 8:
-                        System.out.println("Exiting program...");
+                        System.out.println("Program terminated.");
                         break;
 
                     // Invalid menu option
