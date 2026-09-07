@@ -20,6 +20,13 @@ public class StudentNameManager {
 
         // Ask user for number of students
         System.out.print("Enter number of students: ");
+
+        while (!input.hasNextInt()) {
+            System.out.println("Invalid number of students.");
+            input.next();
+            System.out.print("Enter number of students: ");
+        }
+
         numberOfStudents = input.nextInt();
         input.nextLine();
 
