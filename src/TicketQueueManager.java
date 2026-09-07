@@ -136,7 +136,7 @@ public class TicketQueueManager {
                             System.out.println("First customer: " + customerQueue.element());
 
                             // Find the last customer using a loop
-                            String lastCustomer = "";
+                            String lastCustomer = null;
                             for (String customer : customerQueue) {
                                 lastCustomer = customer;
                             }
